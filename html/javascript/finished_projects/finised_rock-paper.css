@@ -1,0 +1,18 @@
+    body{
+        background-color: rgb(25, 25, 25);
+        color: white;
+        font-family: Arial;
+    }
+    .hi {
+        font-size: 30px;
+        font-weight: bold;
+        font-family: Arial;
+    }
+    .move{
+        background-color: black;
+        border: 1px solid white;
+        color: red;
+        margin: 10px;
+        border-radius: 200px;
+        cursor: pointer;
+    }

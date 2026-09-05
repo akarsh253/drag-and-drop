@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript project_1</title>
+    <link rel="stylesheet" href="/some_css/project1.css">
+</head>
+<body>
+
+    <header><h1>Cart Quantity</h1></header>
+    <button onclick="console.log(`Cart Quantity:${Quantity}`)" class="b1">Show Quantity</button>
+    <button onclick="console.log(`Cart Quantity:${Quantity+=1}`)" class="b1">Add to Cart</button>
+    <button onclick="console.log(`Cart Quantity:${Quantity+=2}`)" class="b1">+2</button>
+    <button onclick="console.log(`Cart Quantity:${Quantity+=3}`)" class="b1">+3</button>
+    <button onclick="console.log(`Cart was reset`);
+    console.log(`Cart Quantity:${Quantity-=Quantity}`)" class="b1">Reset Cart</button>
+    <button onclick="console.log(`Cart Quantity:${Quantity-=1}`)" class="b1">Remove from Cart</button>
+    
+    
+    <script>let Quantity = 0
+    
+    </script> 
+</body>
+</html> 

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Amazon Shipping Calculator</title>
+</head>
+
+<body>
+
+<p>Amazon Shipping Calculator</p>
+<p>Orders under $40 = +$10 shipping.</p>
+<p>Orders $40 or more = Free shipping.</p>
+
+<input class="js-input" placeholder="type a number" onkeydown="handlecost()">
+<button onclick="khana()">Calculate</button>
+
+<p class="result"></p>
+
+<script>
+    function handlecost(){
+        if (event.key === 'Enter'){
+            khana()
+        }
+
+    }
+function khana(){
+
+  let number = Number(document.querySelector('.js-input').value);
+  let result = number;
+
+  if(number < 40){
+      result = number + 10;
+  }
+
+  document.querySelector('.result').innerHTML =
+  `Your total cost is $${result}.`;
+
+}
+</script>
+
+</body>
+</html>
